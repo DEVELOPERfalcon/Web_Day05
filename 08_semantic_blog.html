@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>semantic blog</title>
+    <style>
+        /* *{margin: 0px; padding: 0px;} */ /* 보통은 편한 UI작업을 위해 이렇게 하고 시작하지만 연습을 위해 1개씩 적용 */
+        body{
+            margin: 0px;
+        }
+        header{
+            background-color: lightpink;
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            padding: 5px;
+            text-align: center;
+        }
+        header h1{margin: 0px;}
+        nav{
+            display: table-cell;        /* 테이블의 cell처럼 취급 */
+            background-color: yellow;
+            padding: 15px;
+        }
+        section{
+            display: table-cell;        /* 높이도 자동으로 같아진다 */
+            background-color: lightgreen;
+            padding: 15px;
+        }
+        footer{
+            background-color: brown;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+            font-size: 90%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 시맨틱 요소들은 기본적으로 div와 같은 특성 및 스타일을 가짐 -->
+    <header>
+        <h1>My Blog Page</h1>
+    </header>
+    <nav>
+        <h2>Links</h2>
+        <ul>
+            <li><a href="http://www.w3c.org">W3C</a></li>
+            <li><a href="http://www.naver.com">NAVER</a></li>
+            <li><a href="http://www.daum.net">DAUM</a></li>
+        </ul>
+        <!-- 검색엔진에서 이미지 검색 되도록 figure 시맨틱요소 사용 -->
+        <figure>
+            <img src="./pome.png" alt="홍길동" width="85" height="85">
+            <!-- figcaption을 안쓰면 검색 안 됨 -->
+            <figcaption>홍길동</figcaption>
+        </figure>
+    </nav>
+    <section>
+        <article>
+            <h3>Semantic Tags</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nemo impedit blanditiis, maxime, aliquid suscipit dignissimos corporis magnam dolorem, laborum quasi in reprehenderit atque nobis quaerat accusantium aperiam? Voluptatem, consequuntur.</p>
+        </article>
+        <article>
+            <h3>div와 span</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eum fugit veniam dolore, quo rem quidem eos tempora vel excepturi explicabo consequuntur? Minima soluta saepe fugit reiciendis quam accusantium blanditiis.</p>
+        </article>
+    </section>
+    <footer>
+        Copyright &copy; 2013 Hong
+    </footer>
+</body>
+</html>

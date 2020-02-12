@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- 단축키: html쓰고 html5 선택 -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>overflow</title>
+    <style>
+        p{
+            background-color: lightgreen;
+            width: 200px;
+            height: 50px;
+        }
+        #target{
+            border: 1px solid black;
+            width: 300px;
+            height: 100px;
+
+            /* 자식이 부모사이즈를 넘어섰을 때 해결법 */
+            overflow: scroll; /* 스크롤바가 생김 */
+            overflow: hidden; /* 사이즈를 넘어간 부분이 보이지 않음 */
+            overflow: auto;   /* 스크롤이 필요하면 생기고 아니면 안생김 */
+        }
+        .aa{
+            border: 1px solid blue;
+            width: 300px;
+            height: 100px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="target">
+        <p>block #1</p>
+        <p>block #2</p>
+        <p>block #3</p>
+        <p>block #4</p>
+        <p>block #5</p>
+    </div>
+
+    <div class="aa">
+        <img src="./pome.png" alt="dog">
+    </div>
+
+
+</body>
+</html>

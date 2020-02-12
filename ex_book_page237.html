@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- 1. 2번 -->
+<!-- 2. 4번 -->
+<!-- 3. 2번 -->
+<!-- 4. 1번 -->
+<!-- 5. 4번 -->
+<!-- 6. 2번 -->
+<!-- 7. float는 요소 배치에 사용되며, 요소끼리 서로 잘 어울려지게 할 수 있다. -->
+<!-- 8 -->
+<!-- <html>
+    <head>
+        <style>
+            body{background-color: blue;}
+            body>div{width: 300px; height: 120px; position: absolute; left: 40px; top: 25px; background-color: yellow;}
+            body>div>div{width: 220px; height: 60px; position: absolute;left: 50px; top: 20px; background-color: red;}    
+        </style>
+    </head>
+    <body>
+        <div>
+            <div>
+
+            </div>
+        </div>
+    </body>
+</html> -->
+<!-- 9 -->
+<!-- <html>
+    <head>
+        <meta charset="utf-8">
+        <title>localhost</title>
+        <style>
+            div{
+                background: red;
+                width: 100px; height: 100px;
+                transition: width 2s, height 2s, background 2s, transform 2s;
+            }
+            div:hover{
+                background: yellow;
+                width: 200px; height: 200px;
+                transform: rotate(360deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html> -->
+<!-- 10 -->
+<!-- <html>
+    <head>
+        <style>
+            #Header{background-color: yellow; position: absolute; width: 100%; height: 10%;}
+            #SecondHeader{background-color: red; position: absolute; width: 100%; height: 20%; top: 10%;}
+            #LeftContent{background-color: blue; position: absolute; width: 33%; height: 70%; top: 30%;}
+            #CenterContent{background-color: green; position: absolute; width: 33%; height: 70%; top: 30%; left: 33%;}
+            #RightContent{background-color: purple; position: absolute; width: 33%; height: 70%; top: 30%; left: 66%;}
+        </style>
+    </head>
+    <body>
+        <div id="Header"></div>
+        <div id="SecondHeader"></div>
+        <div id="LeftContent"></div>
+        <div id="CenterContent"></div>
+        <div id="RightContent"></div>
+    </body>
+</html> -->
+<!-- 11 -->
+<!-- <html>
+    <head>
+        <meta charset="utf-8">
+        <title>localhost</title>
+        <style>
+            div{
+                position: absolute;
+                background: red;
+                width: 100px; height: 100px;
+
+                animation-name: move;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes move{
+                0%{left: 0px; top: 0px;}
+                25%{left: 200px; top: 0px;}
+                50%{left: 200px; top: 200px;}
+                75%{left: 0px; top: 200px;}
+                100%{left: 0px; top: 0px;}
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html> -->
+<!-- 12 -->
+<!-- <html>
+    <head>
+        <meta charset="utf-8">
+        <title>localhost</title>
+        <style>
+            h1#string{position: absolute; color: black; left: 0px; top: 0px;}
+            h1#shadow{position: absolute; color: gray; left: 5px; top: 5px;}
+        </style>
+    </head>
+    <body>
+        <h1 id="string">shadow Using Positioning</h1>
+        <h1 id="shadow">shadow Using Positioning</h1>
+    </body>
+</html> -->
+<!-- 13 -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>localhost</title>
+        <style>
+            div#myDiv {
+                font-size: 24pt;
+                font-family: georgia;
+                margin: 1em;
+            }
+
+            span.smallText {
+                font-size: 70%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="myDiv">
+             ∑ x<sub>i</sub><span class="smallText"
+            style="position: relative; top: -1.2em; left: -2.4em;"><i>n</i></span>
+            <span class="smallText" style="position: relative; top: 1.2em; left: -3.2em;"><i>i</i>=1</span>
+        </div>
+    </body>
+</html>
+<!-- 14 -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>localhost</title>
+        <style>
+            div.childDiv { position: absolute; border:1px solid green;
+            width:150px;height:150px; text-align:center;line-height:150px; }
+        </style>
+    </head>
+    <body>
+        <div style="position:relative; width:300px; height:300px;
+        border:1px solid black;margin-left:30px;" >
+
+        <div class="childDiv" style="background:#FEE;
+        left:0;top:0" >left:0;top:0</div>
+
+        <div class="childDiv" style="background:#EEF;
+        right:0;top:0" >right:0;top:0</div>
+
+        <div class="childDiv" style="background:#EFE;
+        left:0;bottom:0" >left:0;bottom:0</div>
+
+        <div class="childDiv" style="background:#EEE;
+        right:0;bottom:0" >right:0;bottom:0</div>
+
+        </div>
+    </body>
+</html>
